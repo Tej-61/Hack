@@ -1,0 +1,132 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.screen {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang-selector {
+  color: #65676b;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.lang-selector .chevron {
+  font-size: 11px;
+  margin-top: 1px;
+}
+
+.logo {
+  margin-bottom: 55px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #dbdbdb;
+  border-radius: 28px;
+  font-size: 15px;
+  background: #fff;
+  color: #262626;
+}
+
+input::placeholder { color: #8e8e8e; }
+
+input:focus {
+  outline: none;
+  border-color: #8e8e8e;
+}
+
+.login-btn {
+  width: 100%;
+  background: #0064FA;
+  color: #fff;
+  border: none;
+  border-radius: 28px;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.login-btn:disabled {
+  background: #b3d3fd;
+  cursor: default;
+}
+
+.forgot {
+  color: #262626;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 22px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.spacer {
+  flex: 1;
+  min-height: 70px;
+}
+
+.create-account-btn {
+  width: 100%;
+  background: #fff;
+  color: #0064FA;
+  border: 1px solid #0064FA;
+  border-radius: 28px;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.meta-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 26px;
+  color: #1c1e21;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#demo-message {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #2e7d32;
+  text-align: center;
+  display: none;
+}
+
+.notice {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 11px;
+  color: #a8a8a8;
+  line-height: 1.5;
+}

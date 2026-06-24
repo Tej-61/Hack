@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page Clone (Educational Project)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="screen">
+
+    <div class="lang-selector">English (UK) <span class="chevron">▾</span></div>
+
+    <div class="logo">
+      <svg width="88" height="88" viewBox="0 0 96 96">
+        <defs>
+          <linearGradient id="igGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FFD600"/>
+            <stop offset="25%" stop-color="#FF7A00"/>
+            <stop offset="50%" stop-color="#FF0169"/>
+            <stop offset="75%" stop-color="#D300C5"/>
+            <stop offset="100%" stop-color="#7638FA"/>
+          </linearGradient>
+        </defs>
+        <rect x="6" y="6" width="84" height="84" rx="22" ry="22" fill="none" stroke="url(#igGradient)" stroke-width="6"/>
+        <circle cx="48" cy="48" r="19" fill="none" stroke="url(#igGradient)" stroke-width="6"/>
+        <circle cx="70" cy="26" r="4" fill="url(#igGradient)"/>
+      </svg>
+    </div>
+
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username, email address or mobile number" autocomplete="off">
+      <input type="password" id="password" placeholder="Password" autocomplete="off">
+      <button type="submit" class="login-btn" id="loginBtn" disabled>Log in</button>
+    </form>
+
+    <p id="demo-message">✅ Demo only — no data was sent or stored anywhere.</p>
+
+    <div class="forgot">Forgotten password?</div>
+
+    <div class="spacer"></div>
+
+    <button class="create-account-btn">Create new account</button>
+
+    <div class="meta-logo">
+      <svg width="30" height="18" viewBox="0 0 32 18" fill="none">
+        <path d="M8 2C4 2 2 5.5 2 9s2 7 6 7c3.2 0 5.3-2.6 7-5.2 1.7 2.6 3.8 5.2 7 5.2 4 0 6-3.5 6-7s-2-7-6-7c-3.2 0-5.3 2.6-7 5.2C13.3 4.6 11.2 2 8 2z" stroke="#0064E0" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      </svg>
+      Meta
+    </div>
+
+    <p class="notice">
+      🎓 Educational UI clone — not affiliated with Instagram or Meta.<br>No data is collected, stored, or transmitted anywhere.
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
